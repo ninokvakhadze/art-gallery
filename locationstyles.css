@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=Outfit:wght@300&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+.image-map-mobile {
+  width: 100vw;
+  height: auto;
+}
+.image-map-tablet {
+  display: none;
+}
+.image-map-desktop {
+  display: none;
+}
+.button-container {
+  display: flex;
+  cursor: pointer;
+  position: absolute;
+  top: -0.1%;
+}
+.button-box {
+  height: 72px;
+  width: 208px;
+  background-color: #151515;
+  padding: 24px 35px 24px 32px;
+}
+.button-container:hover .button-box{
+    background-color: #d5966c;
+}
+.button-text {
+  font-family: Big Shoulders Display;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: 3px;
+  color: white;
+  text-decoration: none;
+}
+button {
+  background-color: #d5966c;
+  height: 72px;
+  width: 56px;
+  border: none;
+  cursor: pointer;
+  border: none;
+}
+.button-container:hover button{
+    background-color: #151515;
+}
+main {
+  padding: 48px 16px 56px 16px;
+  background-color: black;
+  margin-top: -5px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  width: 100vw;
+}
+h1 {
+  font-family: Big Shoulders Display;
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 45px;
+  color: #fff;
+}
+.text-gap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+h3 {
+  font-family: Big Shoulders Display;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 32px;
+  color: #d5966c;
+}
+.address {
+  font-family: Outfit;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 28px;
+  color: white;
+}
+.text {
+  font-family: Outfit;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 28px;
+  color: #fff;
+  height: 140px;
+  width: 343px;
+}
+footer {
+  background-color: #d5966c;
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+  padding: 48px 32px;
+  width: 100vw;
+}
+.logo-dark {
+  height: 40px;
+  width: 110px;
+}
+.footer-gap {
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+}
+.footer-text {
+  font-family: Outfit;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 26px;
+  color: #151515;
+  height: 104px;
+  width: 311px;
+}
+.icons {
+  display: flex;
+  gap: 20px;
+}
+.icon {
+  width: 20px;
+  height: 20px;
+}
+@media screen and (min-width: 720px) {
+  .image-map-mobile {
+    display: none;
+  }
+  .image-map-tablet {
+    display: inline;
+    width: 100vw;
+    height: auto;
+  }
+  .button-container {
+    left: 5%;
+  }
+  main {
+    padding: 88px 40px 80px 39px;
+    flex-direction: row;
+    gap: 68px;
+  }
+  h1 {
+    font-family: Big Shoulders Display;
+    font-size: 55px;
+    line-height: 50px;
+    height: 100px;
+    width: 223px;
+  }
+  .text {
+    height: 112px;
+    width: 398px;
+  }
+  footer {
+    flex-direction: row;
+    gap: 65px;
+    padding: 40px 56px;
+  }
+  .footer-gap {
+    flex-direction: row;
+    gap: 133px;
+  }
+  .footer-text {
+    height: 104px;
+    width: 281px;
+  }
+}
+@media screen and (min-width: 1020px) {
+  .image-map-tablet {
+    display: none;
+  }
+  .image-map-desktop {
+    display: inline;
+    width: 100vw;
+    height: auto;
+  }
+  .button-container {
+    left: 11%;
+  }
+  main {
+    padding: 104px 165px 128px 165px;
+    gap: 220px;
+  }
+  h1 {
+    font-size: 70px;
+    font-weight: 900;
+    line-height: 70px;
+    height: 140px;
+    width: 350px;
+  }
+  .text-gap {
+    gap: 24px;
+  }
+  h3 {
+    font-size: 36px;
+    line-height: 36px;
+  }
+  .address {
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 32px;
+  }
+  .text {
+    height: 128px;
+    width: 540px;
+    font-size: 22px;
+    line-height: 32px;
+  }
+  footer {
+    padding: 80px 165px;
+    gap: 140px;
+  }
+  .logo-dark {
+    height: 58px;
+    width: 159px;
+  }
+  .footer-gap {
+    gap: 320pxpx;
+  }
+  .footer-text {
+    font-size: 18px;
+    line-height: 28px;
+    height: 84px;
+    width: 430px;
+  }
+}
